@@ -34,5 +34,8 @@ def get_student(conn, student_id):
 
 
 def average_grade(conn):
-    """Calcule la moyenne des notes."""
-    raise NotImplementedError("average_grade n'est pas encore implémentée")
+    """Calcule la moyenne des notes avec SQL AVG()."""
+    with conn.cursor() as cur:
+        cur.execute("SELECT AVG(grade) FROM students;")
+        result = cur.fetchone()[0]
+    return float(result) if result is not None else None
