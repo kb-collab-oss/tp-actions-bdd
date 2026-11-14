@@ -1,0 +1,14 @@
+{
+  "name": "node-app",
+  "version": "1.0.0",
+  "description": "App etudiants - tests Jest + PostgreSQL",
+  "scripts": {
+    "test": "jest --runInBand"
+  },
+  "dependencies": {
+    "pg": "^8.13.1"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}

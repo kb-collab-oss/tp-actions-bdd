@@ -1,0 +1,10 @@
+{
+    "name": "todo/php-app",
+    "description": "App etudiants - tests PHPUnit + PostgreSQL",
+    "require-dev": {
+        "phpunit/phpunit": "^11.0"
+    },
+    "autoload": {
+        "classmap": ["src/"]
+    }
+}
