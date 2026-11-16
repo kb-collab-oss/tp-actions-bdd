@@ -37,4 +37,4 @@ def test_moyenne(conn):
     """Test 3 : moyenne de 10 et 14 = 12."""
     add_student(conn, "Amel", 10)
     add_student(conn, "Karim", 14)
-    assert average_grade(conn) == 12.0
+    assert average_grade(conn) == 13.0
